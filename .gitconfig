@@ -1,0 +1,14 @@
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+#	name = Razvan V. Marinescu
+#	email = mrazvan22@gmail.com
+[user]
+	name = Razvan Marinescu
+	email = mrazvan22@gmail.com
+[merge]
+	tool = kdiff3
+[mergetool "meld"]
+	path = meld
+[diff]
+	guitool = meld
