@@ -50,7 +50,12 @@ exec "audacious &"
 #exec --no-startup-id "setxkbmap -model pc105 -layout us,gb,ro,de -option grp:_shift_toggle"
 bindsym $mod+Shift+P exec "cd /home/razvan/phd_proj/voxelwiseDPM/ipmi_paper/ && pdflatex paper.tex"
 
+# set evince default pdf viewer
+exec xdg-mime default evince.desktop application/pdf
+
 exec setxkbmap ro
+exec ~/.dropbox-dist/dropboxd
+
 
 # start a terminal
 bindsym $mod+Return exec i3-sensible-terminal
@@ -219,6 +224,11 @@ workspace 12 output $INTERNAL_MONITOR
 workspace 13 output $INTERNAL_MONITOR
 workspace 14 output $INTERNAL_MONITOR
 workspace 15 output $INTERNAL_MONITOR
+workspace 16 output $EXTERNAL_MONITOR
+workspace 17 output $EXTERNAL_MONITOR
+workspace 18 output $EXTERNAL_MONITOR
+workspace 19 output $EXTERNAL_MONITOR
+workspace 20 output $EXTERNAL_MONITOR
 
 
 for_window [class="Firefox" instance="Navigator" window_role="Browser"] border none

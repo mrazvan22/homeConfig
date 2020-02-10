@@ -1,3 +1,7 @@
+function ko {
+    kile $(realpath $1)
+}
+
 #### short commands
 alias gcm='git commit -am '
 alias g=git
@@ -8,7 +12,7 @@ alias gst='git status'
 alias spellcheck='gnome-terminal -x ~/spellcheck.sh'
 alias d='ls -G -laht --color=auto'
 alias ls='ls -G --color=auto'
-alias go='open '
+#alias go='open '
 
 #### shortcuts to directories
 alias journal='cd /phd/mres/voxelwiseDPM/journal_paper'
@@ -17,7 +21,7 @@ alias diffeq='cd /phd/mres/diffEqModel'
 alias vox='cd /phd/mres/voxelwiseDPM/'
 alias vbox='cd /phd/mres/vbox_shared/'
 alias challenge='cd /phd/mres/data/ADNI/challenge_training_data'
-alias tadpole='cd /phd/mres/data/ADNI/challenge_training_data/'
+alias tadpole='cd /phd/mres/data/ADNI/challenge_training_data/evaluation/'
 alias joint=' cd /phd/mres/jointModellingDisease/'
 alias thesis='cd /phd/mres/thesisPhd/'
 alias user='cd /data/vision/polina/users/razvan/'
@@ -27,3 +31,6 @@ alias localFld='cd /home/razvan/'
 alias website='cd /research/website-academic'
 alias pres='cd /research/presentations'
 alias research='cd /research'
+alias coloring='cd /phd/mres/brain-coloring'
+alias papers='cd /research/papers/'
+alias boundary='cd /research/boundaryCrossing/'
